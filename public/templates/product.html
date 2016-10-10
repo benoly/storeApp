@@ -1,0 +1,9 @@
+
+<div class="card" ng-repeat="item in list">
+  <img src={{item.url}} style="width:200px" "height:200px">
+  <div class="container">
+    <h4><a>{{item.name}}</a></h4>
+      <p>{{item.price}}</p>
+      <a ng-click="addToCart(item)" ui-sref="cart">Buy Now!</a>
+  </div>
+</div>
